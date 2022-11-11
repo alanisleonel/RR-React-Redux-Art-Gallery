@@ -29,6 +29,7 @@ export const dataSlice = createSlice({
 
 export const { setData, clearData, incrementId, decrementId, inputId } = dataSlice.actions
 
+//creating a Thunk
 export const fetchData = () => {
     const fetchDataThunk = async (dispatch, getState) => {
         let state = getState()
